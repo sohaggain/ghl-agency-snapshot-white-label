@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4B5563"/>
+    </marker>
+    <style>
+      .template { fill: #EEF2FF; stroke: #4F46E5; stroke-width:2; }
+      .component { fill: #ECFDF5; stroke: #059669; stroke-width:2; }
+      .snapshot { fill: #FDF4FF; stroke: #A21CAF; stroke-width:2.5; }
+      .client { fill: #F3F4F6; stroke: #6B7280; stroke-width:2; }
+      .label { font-size: 13px; fill: #111827; font-weight: 600; }
+      .sublabel { font-size: 10.5px; fill: #4B5563; }
+      .sectiontitle { font-size: 16px; fill: #111827; font-weight: 700; }
+      .arrow { stroke: #4B5563; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <text x="600" y="35" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">Agency Snapshot / White-Label Setup — Structure</text>
+  <text x="600" y="56" text-anchor="middle" font-size="13" fill="#4B5563">Example niche: Dental Clinic — same structure reusable for any vertical</text>
+
+  <!-- Template sub-account box -->
+  <rect class="template" x="80" y="90" width="1040" height="330" rx="12"/>
+  <text class="sectiontitle" x="600" y="118" text-anchor="middle" fill="#4F46E5">TEMPLATE Sub-Account (built once)</text>
+
+  <!-- Components inside template -->
+  <rect class="component" x="110" y="140" width="220" height="70" rx="8"/>
+  <text class="label" x="220" y="165" text-anchor="middle" font-size="12">Pipeline</text>
+  <text class="sublabel" x="220" y="182" text-anchor="middle">Patient Journey</text>
+  <text class="sublabel" x="220" y="196" text-anchor="middle">6 stages: Inquiry → Won/Lost</text>
+
+  <rect class="component" x="350" y="140" width="220" height="70" rx="8"/>
+  <text class="label" x="460" y="165" text-anchor="middle" font-size="12">Custom Fields</text>
+  <text class="sublabel" x="460" y="182" text-anchor="middle">Insurance Provider,</text>
+  <text class="sublabel" x="460" y="196" text-anchor="middle">Treatment Interest</text>
+
+  <rect class="component" x="590" y="140" width="220" height="70" rx="8"/>
+  <text class="label" x="700" y="165" text-anchor="middle" font-size="12">Calendars</text>
+  <text class="sublabel" x="700" y="182" text-anchor="middle">New Patient Consult,</text>
+  <text class="sublabel" x="700" y="196" text-anchor="middle">Follow-up Appointment</text>
+
+  <rect class="component" x="830" y="140" width="220" height="70" rx="8"/>
+  <text class="label" x="940" y="165" text-anchor="middle" font-size="12">Workflows (bundled)</text>
+  <text class="sublabel" x="940" y="182" text-anchor="middle">Speed-to-Lead, Missed Call,</text>
+  <text class="sublabel" x="940" y="196" text-anchor="middle">Reminders, AI Chatbot</text>
+
+  <rect class="component" x="110" y="225" width="220" height="70" rx="8"/>
+  <text class="label" x="220" y="250" text-anchor="middle" font-size="12">Funnel / Website</text>
+  <text class="sublabel" x="220" y="267" text-anchor="middle">Landing page + booking</text>
+  <text class="sublabel" x="220" y="281" text-anchor="middle">widget + thank-you page</text>
+
+  <rect class="component" x="350" y="225" width="220" height="70" rx="8"/>
+  <text class="label" x="460" y="250" text-anchor="middle" font-size="12">Forms</text>
+  <text class="sublabel" x="460" y="267" text-anchor="middle">New Patient Intake Form</text>
+
+  <rect class="component" x="590" y="225" width="220" height="70" rx="8"/>
+  <text class="label" x="700" y="250" text-anchor="middle" font-size="12">Email / SMS Templates</text>
+  <text class="sublabel" x="700" y="267" text-anchor="middle">Welcome, confirmation,</text>
+  <text class="sublabel" x="700" y="281" text-anchor="middle">review request</text>
+
+  <rect class="component" x="830" y="225" width="220" height="70" rx="8"/>
+  <text class="label" x="940" y="250" text-anchor="middle" font-size="12">Tag Structure</text>
+  <text class="sublabel" x="940" y="267" text-anchor="middle">new-lead, hot-lead-instant,</text>
+  <text class="sublabel" x="940" y="281" text-anchor="middle">ai-qualified-lead, patient-won</text>
+
+  <text class="sublabel" x="600" y="335" text-anchor="middle" font-size="11" fill="#4F46E5">All components use generic placeholders: [Business Name], [Booking Link] — swapped per client at deploy time</text>
+
+  <path class="arrow" d="M600,350 L600,400" stroke-width="3"/>
+  <text class="sublabel" x="600" y="395" text-anchor="middle" font-size="11">Create Snapshot</text>
+
+  <!-- Snapshot box -->
+  <rect class="snapshot" x="450" y="420" width="300" height="70" rx="10"/>
+  <text class="label" x="600" y="450" text-anchor="middle" fill="#A21CAF">GHL Snapshot</text>
+  <text class="sublabel" x="600" y="468" text-anchor="middle">"Dental Clinic — Full Automation Package"</text>
+  <text class="sublabel" x="600" y="482" text-anchor="middle">Shareable / marketplace-ready link</text>
+
+  <path class="arrow" d="M600,490 L600,520" stroke-width="3"/>
+  <text class="sublabel" x="600" y="515" text-anchor="middle" font-size="11">Import Snapshot (~15 min)</text>
+
+  <!-- Deploy to multiple clients -->
+  <line class="arrow" x1="600" y1="520" x2="250" y2="580" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="600" y1="520" x2="600" y2="580" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="600" y1="520" x2="950" y2="580" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect class="client" x="100" y="580" width="300" height="60" rx="8"/>
+  <text class="label" x="250" y="605" text-anchor="middle" font-size="12">Client A Sub-Account</text>
+  <text class="sublabel" x="250" y="622" text-anchor="middle">Fully configured in minutes</text>
+
+  <rect class="client" x="450" y="580" width="300" height="60" rx="8"/>
+  <text class="label" x="600" y="605" text-anchor="middle" font-size="12">Client B Sub-Account</text>
+  <text class="sublabel" x="600" y="622" text-anchor="middle">Fully configured in minutes</text>
+
+  <rect class="client" x="800" y="580" width="300" height="60" rx="8"/>
+  <text class="label" x="950" y="605" text-anchor="middle" font-size="12">Client C Sub-Account</text>
+  <text class="sublabel" x="950" y="622" text-anchor="middle">Fully configured in minutes</text>
+
+  <!-- Impact box -->
+  <rect x="150" y="680" width="900" height="90" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+  <text class="label" x="600" y="708" text-anchor="middle" fill="#EA580C" font-size="15">Impact</text>
+  <text class="sublabel" x="600" y="730" text-anchor="middle" font-size="12">Manual setup per client: ~5 days of configuration work</text>
+  <text class="sublabel" x="600" y="748" text-anchor="middle" font-size="12">With Snapshot: ~15 minutes to deploy a fully working system for a new client</text>
+
+  <!-- Legend -->
+  <rect x="150" y="810" width="16" height="16" class="template"/>
+  <text x="172" y="823" class="sublabel">Template container</text>
+  <rect x="320" y="810" width="16" height="16" class="component"/>
+  <text x="342" y="823" class="sublabel">Component</text>
+  <rect x="470" y="810" width="16" height="16" class="snapshot"/>
+  <text x="492" y="823" class="sublabel">Snapshot artifact</text>
+  <rect x="640" y="810" width="16" height="16" class="client"/>
+  <text x="662" y="823" class="sublabel">Deployed client instance</text>
+</svg>
